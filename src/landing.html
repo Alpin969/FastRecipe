@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
     <link href="../index.css" rel="stylesheet" />
+     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="min-h-screen bg-[#86b96b]">
 
-      <!-- Navbar -->
       <div class="flex justify-between items-center px-8 py-4 bg-[#d9d2b6]">
         <h1 class="font-semibold">FastRecipe</h1>
-    
+
         <div class="flex gap-6 items-center">
           <a href="#" class="hover:text-white">Home</a>
           <a href="#" class="hover:text-white">Category</a>
@@ -22,33 +22,326 @@
           </a>
         </div>
       </div>
-    
-      <!-- Hero Section -->
-      <div class="flex items-center justify-between px-16 py-16">
-    
-        <!-- Left Text -->
-        <div class="max-w-lg">
-          <p class="mb-2">Selamat datang di FastRecipe</p>
-    
-          <h2 class="text-2xl font-semibold mb-6 leading-relaxed">
-            RESEP MAKANAN DI SINI BISA SANGAT ENAK DAN JUGA GAMPANG DI BUAT
-          </h2>
-    
-          <button class="bg-[#c6d5a3] px-4 py-2 rounded-lg">
-            <a href="http://127.0.0.1:5500/login/login.html">Berikutnya</a>
-          </button>
+      <section
+      class="bg-linear-to-br from-[#a8d96f] to-[#91c763] min-h-[90vh] text-gray-900 px-8 md:px-16 py-16 flex items-center">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+          <p class="text-lg text-green-900 font-semibold">
+            Selamat datang di FastRecipe
+          </p>
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            Resep masakan mudah & cepat, dari dapur kamu langsung ke meja
+          </h1>
+          <p class="text-xl text-gray-800">
+            Temukan ide menu harian, resep populer, dan langkah masak jelas
+            untuk semua level skill.
+          </p>
+         
+          <div class="flex flex-wrap gap-4">
+            <a
+            href="/FastRecipe-main/Register/register.html"
+              class="bg-green-300 text-green-900 px-8 py-3 rounded-xl font-bold shadow transition-all duration-300 hover:bg-green-400 hover:-translate-y-1"
+              >Mulai Sekarang</a>
+            
+            <a
+              href="#popular"
+              class="px-8 py-3 rounded-xl border border-green-300 text-green-900 font-bold hover:bg-green-100"
+              >Lihat resep</a>
+          </div>
         </div>
-    
-        <!-- Right Image -->
-        <div>
-          <img 
-            src="../assets/makanan4.jpg" 
-            class="w-[350px] h-[350px] object-cover rounded-full"
+        
+        <div class="flex justify-center">
+          <img
+            class="w-95 h-95 object-cover rounded-full border-8 border-white shadow-2xl"
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=800&fit=crop"
+            alt="Dish"
           />
         </div>
-    
       </div>
+    </section>
+<!-- about me -->
+    <section id="about" class="bg-white px-8 md:px-16 py-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2 class="text-4xl font-bold text-gray-900">Tentang FastRecipe</h2>
+            <p class="text-lg text-gray-600">
+              FastRecipe adalah platform resep masakan Indonesia terdepan yang menghubungkan pecinta kuliner dengan dunia memasak yang mudah dan menyenangkan.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Resep Cepat & Mudah</h3>
+                  <p class="text-gray-600">Temukan ribuan resep dengan langkah-langkah yang jelas dan waktu memasak yang efisien.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Komunitas Kuliner</h3>
+                  <p class="text-gray-600">Bergabung dengan ribuan pengguna yang berbagi resep dan tips memasak setiap hari.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Bahan Mudah Didapat</h3>
+                  <p class="text-gray-600">Semua resep menggunakan bahan-bahan yang mudah ditemukan di pasar tradisional Indonesia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop"
+              alt="Cooking ingredients"
+              class="w-full max-w-md rounded-2xl shadow-2xl object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-green-600">10K+</div>
+            <div class="text-gray-600">Resep</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-green-600">50K+</div>
+            <div class="text-gray-600">Pengguna Aktif</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-green-600">100+</div>
+            <div class="text-gray-600">Chef Partner</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-green-600">4.8</div>
+            <div class="text-gray-600">Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <!-- chef populer -->
+    <section id="chefs" class="px-8 md:px-16 my-14">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Chef Terkenal yang Menggunakan FastRecipe</h2>
+          <p class="text-gray-600">Bergabunglah dengan para chef profesional Indonesia yang telah menemukan inspirasi di platform kami</p>
+        </div>
+       
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <img
+              src="/FastRecipe-main/assets/arnold.jpg"
+              alt="Chef Arnold Poernomo"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Arnold Poernomo</h3>
+            <p class="text-gray-600 mb-4">Chef selebriti dan entrepreneur kuliner Indonesia</p>
+            <div class="text-yellow-400">
+              ★★★★★
+            </div>
+            <p class="text-sm text-gray-500 mt-2">"FastRecipe membantu saya menemukan resep inovatif untuk menu restoran saya."</p>
+          </div>
+
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <img
+              src="/FastRecipe-main/assets/chef-juna_169.jpeg"
+              alt="Chef Juna"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Chef Juna</h3>
+            <p class="text-gray-600 mb-4">Chef spesialis masakan tradisional Indonesia</p>
+            <div class="text-yellow-400">
+              ★★★★★
+            </div>
+            <p class="text-sm text-gray-500 mt-2">"Platform yang sempurna untuk berbagi resep warisan kuliner Indonesia."</p>
+          </div>
+
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <img
+              src="/FastRecipe-main/assets/renata.jpg"s
+              alt="Chef Renata"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Chef Renata</h3>
+            <p class="text-gray-600 mb-4">Chef pastry dan dessert specialist</p>
+            <div class="text-yellow-400">
+              ★★★★★
+            </div>
+            <p class="text-sm text-gray-500 mt-2">"FastRecipe membuat eksperimen di dapur menjadi lebih menyenangkan dan mudah."</p>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    </div>
+    <section id="categories" class="px-8 md:px-16 my-14">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold">Kategori Populer</h2>
+          <a href="#" class="text-green-700 font-semibold">Lihat semua</a>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+         
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <span
+              class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1"
+              >Ringkas</span
+            >
+            <h3 class="text-xl font-bold">Makanan Cepat Saji</h3>
+            <p class="text-gray-600">
+              Resep 30 menit atau kurang, sempurna untuk menu sibuk.
+            </p>
+          </div>
+         
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <span
+              class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1"
+              >Sehat</span
+            >
+            <h3 class="text-xl font-bold">Makanan Sehat</h3>
+            <p class="text-gray-600">
+              Pilihan bergizi dengan bahan sederhana dan ringan.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <span
+              class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1"
+              >Hemat</span
+            >
+            <h3 class="text-xl font-bold">Masakan Rumahan</h3>
+            <p class="text-gray-600">
+              Resep sehari-hari dengan biaya rendah dan rasa maksimal.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <span
+              class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1"
+              >Spesial</span
+            >
+            <h3 class="text-xl font-bold">Makanan Tradisional</h3>
+            <p class="text-gray-600">
+              Makanan warisan lokal yang kaya rasa dan cerita.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  resep weekly -->
+    <section id="popular" class="px-8 md:px-16 my-14">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold">Resep Populer Minggu Ini</h2>
+          <a href="#" class="text-green-700 font-semibold">Lihat semua</a>
+        </div>
+      
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="/FastRecipe-main/assets/ayam.jpg"
+              alt="Ayam Goreng"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-6">
+              <div
+                class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1 inline-block mb-3"
+              >
+                Mudah
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Ayam Goreng Crispy</h3>
+              <p class="text-gray-600 mb-4">
+                Kombinasi bumbu rahasia untuk kulit renyah dan daging moist.
+              </p>
+              <a
+                href="#"
+                class="bg-green-300 text-green-900 px-5 py-2 rounded-lg transition-all duration-300 hover:bg-green-400 hover:-translate-y-1"
+                >Lihat Resep</a
+              >
+            </div>
+          </article>
+
+          
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="/FastRecipe-main/assets/nasi-goreng-kencur-kemangi.jpg"
+              alt="Nasi Goreng"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-6">
+              <div
+                class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1 inline-block mb-3"
+              >
+                Favorit
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Nasi Goreng Spesial</h3>
+              <p class="text-gray-600 mb-4">
+                Resep klasik dengan level umami tinggi & mudah dibuat.
+              </p>
+              <a
+                href="#"
+                class="bg-green-300 text-green-900 px-5 py-2 rounded-lg transition-all duration-300 hover:bg-green-400 hover:-translate-y-1"
+                >Lihat Resep</a
+              >
+            </div>
+          </article>
+
+          
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="/FastRecipe-main/assets/salad.jpeg"
+              alt="Salad"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-6">
+              <div
+                class="bg-green-100 text-green-800 rounded-full font-bold text-xs px-3 py-1 inline-block mb-3"
+              >
+                Sehat
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Salad Sayur Segar</h3>
+              <p class="text-gray-600 mb-4">
+                Campuran sayur segar dengan saus sederhana dan protein sehat.
+              </p>
+              <a
+                href="#"
+                class="bg-green-300 text-green-900 px-5 py-2 rounded-lg transition-all duration-300 hover:bg-green-400 hover:-translate-y-1"
+                >Lihat Resep</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-white border-t border-gray-200 py-10">
+      <div class="max-w-6xl mx-auto px-8 md:px-16 text-center">
+        <p class="text-gray-600">
+          © 2026 FastRecipe. Dibuat dengan rasa dan semangat masakan Indonesia.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
